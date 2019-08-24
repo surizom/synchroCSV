@@ -1,0 +1,43 @@
+nom;debut;fin;niveau;ressources
+Sécu;;;1;
+Inventaire -1 F;02/09/2018;10/09/2018;2;Iti, Log
+Assurance;01/08/2018;30/05/2019;2;
+Assurance : Veille exigence légale ;01/08/2018;30/05/2019;2;
+Assurance : Faire assurer les WERs;01/08/2018;10/10/2018;2;
+Assurance : Faire assurer la SER;01/10/2018;04/11/2018;2;
+Assurance : Faire assurer le NND;01/11/2018;02/03/2019;2;
+Assurance : Faire assurer le WERP et le RAID;01/03/2019;13/03/2019;2;
+Assurance : S'occuper d'éventuels remboursements et assistances à domicile;01/04/2019;30/05/2019;2;
+Assurance : Mettre à jour la liste du matériel;01/08/2018;01/04/2019;2;
+Assistance médicale;01/08/2018;15/11/2018;2;
+Assistance médicale : Recherche de secouristes pros;01/08/2018;15/11/2018;2;
+Assistance médicale : Recherche de devis pour support médical;01/08/2018;17/11/2018;2;
+Assistance médicale : Recherche de kinés et ostéos;01/12/2018;17/01/2019;2;
+Assistance médicale : Bilan Handisport (inscrit, condition sécu, parcours, point buro);01/01/2019;03/04/2019;2;
+Assistance médicale : Finalisation recrutement et transport des kinés;01/02/2019;10/04/2019;2;Log
+Dossier préfectures;01/09/2019;10/04/2019;2;
+Dossier préfectures : Contacter les préfectures pour le NND pour s'informer sur les dossiers à fournir;01/09/2017;15/10/2019;2;
+Dossier préfectures : Autorisations ONF pour le NND;01/10/2018;12/02/2019;2;Enviqua
+Dossier préfectures : Contacter les préfectures pour le RAID pour s'informer sur les dossiers à fournir;01/11/2018;01/01/2019;2;
+Dossier préfectures : Réalisation du dossier pref du NND;01/11/2018;02/03/2019;2;
+Dossier préfectures : Envoi du dossier pref du NND;10/11/2018;15/10/2018;2;
+Dossier préfectures : Avoir un premier tracé du RAID par l'iti;05/11/2018;22/12/2018;2;Iti
+Dossier préfectures : Relancer les mairies qui n'ont pas répondu;01/11/2018;17/02/2019;2;VPOLIS
+Dossier préfectures : Autorisations ONF pour le RAID;01/12/2018;10/04/2019;2;Enviqua
+Dossier préfectures : Réalisation du dossier pref du RAID;01/12/2018;30/01/2019;2;
+Dossier préfectures : Envoi du dossier pref du RAID;15/01/2019;16/01/2019;2;
+Talkies;17/09/2018;11/02/2019;2;
+Talkies : Test des talkies pendant les WER;17/09/2018;15/10/2018;2;
+Talkies : Devis Talkies;01/10/2018;28/01/2019;2;
+Talkies : Finalisation et signature contrats talkies;01/01/2019;11/02/2019;2;
+Démarchage;01/10/2018;01/04/2019;2;
+Démarchage : Contacter Thomas Renais et résever les WE SST;01/10/2018;01/02/2019;2;
+Démarchage : Contacter la DGSE et réserver les sessions formations extincteurs;01/10/2018;01/02/2019;2;
+Choix du lieu;08/10/2018;10/10/2018;2;POLIS
+Démarchage : Retape Médicale;01/11/2018;01/04/2019;2;
+Préparation audit interne;15/10/2018;07/01/2018;2;Enviqua, Tous
+Vérification exigences NND;01/12/2018;25/02/2018;2;Buro, Enviqua
+Audit interne;26/03/2018;07/04/2019;2;Enviqua, Tous
+Organisation WERP;19/02/2019;15/04/2019;2;Log, Iti
+Vérifier exigences du Raid ;28/02/2019;23/04/2019;2;Enviqua, Buro
+Préparation audit externe;13/03/2019;31/03/2019;2;Tous, Enviqua

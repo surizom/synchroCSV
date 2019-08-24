@@ -1,0 +1,51 @@
+nom;debut;fin;niveau;ressources;;;;;
+Log;;;1;;;;;;
+Inventaire -1 F;02.09.2018;10.09.2018;2;Iti, Sécu;;;;;
+Demarchage supermarchés Saclay;02.09.2018;10.09.2018;;;;;;;
+Organisation WER1;07.06.2018;23.09.2018;2;Iti;;;;;
+Réservation gîte WER1;15.06.2018;30.07.2018;2;;;;;;
+Commande de nourriture WER1;28.08.2018;20.09.2018;2;;;;;;
+Organisation WER2;07.06.2018;30.09.2018;2;Iti;;;;;
+Réservation gîte WER2;15.06.2018;07.08.2018;2;;;;;;
+Commande de nourriture WER2;07.09.2018;28.09.2018;2;;;;;;
+Organisation WER3;07.06.2018;07.10.2018;2;Iti;;;;;
+Réservation gîte WER3;15.06.2018;15.08.2018;2;;;;;;
+Commande de nourriture WER3;15.09.2018;05.10.2018;2;;;;;;
+Liste des campings et des salles au sec;15.06.2018;06.10.2018;2;;;;;;
+Plaquette log-enviqua;30.09.2018;10.10.2018;2;Enviqua, Design;;;;;
+Test matos;01.09.2018;01.04.2019;2;;;;;;
+SMI;01.09.2018;15.06.2019;2;;;;;;
+Carnet de bord;01.09.2018;15.06.2019;2;;;;;;
+Choix du lieu;08.10.2018;10.10.2018;2;POLIS;;;;;
+Liste des supermarchés Raid;12.10.2018;30.11.2018;2;;;;;;
+Organisation SER;12.10.2018;26.10.2018;2;Iti;;;;;
+Sélection des campings;28.10.2018;15.11.2018;2;Iti;;;;;
+Préparation audit interne;15.10.2018;07.01.2019;2;Enviqua, Tous;;? Date audit interne;;;
+Préparation du WERA;06.11.2018;23.11.2018;2;Iti;;? Date Wer A;;;
+WERA : Devis camping;06.11.2018;24.11.2018;2;;;? Date Wer A;;;
+WERA : Devis salles au sec;06.11.2018;24.11.2018;2;;;? Date Wer A;;;
+Devis traiteur ;06.11.2018;21.12.2018;2;;;;;;
+NND : bouffe (traiteur), matos (vérification vaiselle), CP, respo camp;06.11.2018;22.02.2019;2;;;;;;
+Contrat D'Aucy;15.11.2018;15.03.2019;2;;;;;;
+Réservations navettes;15.11.2018;31.03.2019;2;;;;;;
+Rachat matos;01.12.2018;31.01.2019;2;;;;;;
+Commande bouffe NND;15.02.2019;29.02.2019;2;;;;;;
+Contrats campings + salles au sec;01.12.2018;31.01.2019;2;;;;;21/09-23/09;wer1
+Formation Respos NND;14.12.2018;29.02.2019;2;Entreprise, Com, Iti;;;;28-09-30/09;wer2
+Audit interne;01.01.2018;10.01.2019;;;;;;;
+Location voitures, cam et camion frigo;02.01.2019;31.03.2019;2;;;;;26/10-04/11;ser
+Commande bouffe Raid;01.04.2019;15.04.2019;2;;;;;01/03-02/03;nnd
+Finalisation recrutement et transport des kinés;01.02.2019;10.04.2019;2;Sécu;;;;24/04-28/04;raid
+Nomination Respos Jour & Nuit;11.01.2019;04.03.2019;2;Iti, Buro;;? Date ;;;
+Organisation WERP;19.02.2019;15.04.2019;2;Iti, sécu;;? Date Wer P;;;
+Formation Respos Raid;10.03.2019;10.04.2019;2;;;;;;
+Préparation audit externe;13.03.2019;31.03.2019;2;Tous, Enviqua;;? Date audit externe;;;
+Rendez-vous Supermarché (WERP);16.03.2019;19.03.2019;2;;;? Date Wer P;;;
+Classeur Log;20.03.2019;07.04.2019;2;;;;;;
+Audit externe;26.03.2019;07.04.2019;;;;;;;
+Dépôt bouffe campings Raid;18.04.2019;23.04.2019;2;;;;;;
+Remerciements + lettres de recommandation;03.05.2019;30.05.2019;2;;;;;;
+Cloture du dossier Avis;03.05.2019;01.06.2019;2;;;;;;
+Rachat matos post-Raid;03.05.2019;15.06.2019;2;;;;;;
+Adapter les quantités en fonction des fiches retour;03.05.2019;15.06.2019;2;;;;;;
+Préparation CDMGE (Logistique);01.05.2019;05.06.2019;2;Com, Entreprise;;? Date CDMGE;;;
