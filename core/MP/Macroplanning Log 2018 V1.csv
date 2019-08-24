@@ -1,0 +1,58 @@
+nom;debut;fin;niveau;ressources
+Log;;;1;
+Préparation Déménagement;08/06/2017;09/09/2017;2;
+Préparation CDMGE (Logistique);09/06/2017;10/09/2017;2;Com, Entreprise
+Déménagement;09/09/2017;20/09/2017;2;
+Inventaire -1 F;08/06/2017;01/06/2018;2;Iti, Sécu
+Organisation WER1;15/06/2017;08/09/2017;2;Iti
+Réservation gîte WER1;15/06/2017;30/07/2017;2;
+Commande de nourriture WER1;28/08/2017;08/09/2017;2;
+Organisation WER2;15/06/2017;29/09/2017;2;Iti
+Réservation gîte WER2;15/06/2017;15/08/2017;2;
+Commande de nourriture WER2;15/09/2017;29/09/2017;2;
+Organisation WER3;15/06/2017;06/10/2017;2;Iti
+Réservation gîte WER3;15/06/2017;22/08/2017;2;
+Commande de nourriture WER3;25/09/2017;06/10/2017;2;
+Faire la liste des campings et des salles au sec;15/06/2017;06/10/2017;2;
+Liste des supermarchés Saclay;01/08/2017;09/09/2017;2;
+Retape (recherche de sponsors alimentaires);15/06/2017;31/01/2017;2;Entreprise
+Retape (recherche de sponsors voitures);15/06/2017;15/03/2017;2;Entreprise
+Plaquette log-enviqua;15/07/2017;01/09/2017;2;Enviqua, Design
+Test matos;01/09/2017;01/06/2018;2;
+SMI;01/09/2017;15/06/2018;2;
+Carnet de bord;01/09/2017;15/06/2018;2;
+Choix du lieu;09/10/2017;12/10/2017;2;Iti, POLIS
+Liste des supermarchés Raid;12/10/2017;30/11/2017;2;
+Organisation SER;12/10/2017;27/10/2017;2;Iti
+Sélection des campings;28/10/2017;05/11/2017;2;Iti
+Préparation audit interne;06/11/2017;01/12/2017;2;Enviqua, Tous
+Préparation du WERA;06/11/2017;11/12/2017;2;Iti
+WERA : Devis camping;06/11/2017;11/12/2017;2;
+WERA : Devis salles au sec;06/11/2017;11/12/2017;2;
+Devis traiteur ;06/11/2017;21/12/2017;2;
+NND : bouffe (traiteur), matos (vérification vaiselle), CP, respo camp;06/11/2017;16/02/2018;2;
+Contrat D'Aucy;15/11/2017;15/03/2018;2;
+Réservations navettes;15/11/2017;31/03/2018;2;
+Rachat matos;01/12/2017;31/01/2018;2;
+Commande de vaisselle jetable NND;01/02/2018;31/03/2018;2;Enviqua
+Contrats campings + salles au sec;01/12/2017;31/01/2018;2;
+Formation Respos NND;15/12/2017;16/02/2018;2;Entreprise, M‚dia, Com, Iti
+Audit interne;15/12/2017;15/01/2018;2;Enviqua, Tous
+Location voitures camionnettes et camion frigo;02/01/2018;31/03/2018;2;
+Commande de bouffe;01/01/2018;31/03/2018;2;
+Finalisation recrutement et transport des kinés;01/02/2018;31/03/2018;2;Sécu
+Commande de vaisselle jetable Raid;01/02/2018;31/03/2018;2;Enviqua
+Nomination Respos Jour & Nuit;19/02/2018;10/03/2018;2;Iti, Buro
+Organisation WERP;19/02/2018;17/03/2018;2;Iti
+Briefer éco-respos - NND;14/02/2018;16/02/2018;2;Enviqua
+Formation Respos Raid;10/03/2018;10/04/2018;2;
+Préparation audit externe;13/03/2018;15/04/2018;2;Tous, Enviqua
+Retape (recherche de sponsors alimentaires);15/03/2018;20/05/2018;2;Entreprise
+Rendez-vous Supermarché (WERP);16/03/2018;19/03/2018;2;
+Classeur Log;20/03/2018;26/04/2018;2;
+Transport kinés;04/03/2018;26/04/2018;2;Sécu
+Dépôt bouffe campings Raid;16/04/2018;25/04/2018;2;
+Remerciements + lettres de recommandation;03/05/2018;30/05/2018;2;
+Cloture du dossier Avis;03/05/2018;01/06/2018;2;
+Rachat matos post-Raid;03/05/2018;15/06/2018;2;
+Adapter les quantités en fonction des fiches retour;03/05/2018;15/06/2018;2;
