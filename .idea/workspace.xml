@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed66235b-1326-4509-a6fc-fc9ce611e3e0" name="Default Changelist" comment="" />
+    <list default="true" id="ed66235b-1326-4509-a6fc-fc9ce611e3e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/synchroCSV_jar/synchroCSV.jar" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/synchroCSV_jar/synchroCSV.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Synchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Synchronizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synchroCSV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/synchroCSV.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Synchronizer.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +32,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Synchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2703">
-              <caret line="285" column="73" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
+            <state relative-caret-position="2380">
+              <caret line="140" column="20" lean-forward="true" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1209#1215#0" expanded="true" />
+                <element signature="e#1391#1399#0" expanded="true" />
+                <element signature="e#10743#10752#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,7 +170,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/synchroCSV" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -168,7 +179,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -202,6 +213,10 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/artifacts/synchroCSV_jar/synchroCSV.jar" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Synchronizer" />
+      <item itemvalue="JAR Application.synchroCSV.jar" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -213,13 +228,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566686800224</updated>
-      <workItem from="1566686805140" duration="7015000" />
-      <workItem from="1566736392682" duration="938000" />
+      <workItem from="1566686805140" duration="8310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7953000" />
+    <option name="totallyTimeSpent" value="8319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="-7" width="1472" height="878" extended-state="6" />
@@ -228,17 +242,17 @@
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Learn" order="2" weight="0.3293201" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.25354108" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25354108" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -261,16 +275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Sector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="e#145#151#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -321,13 +325,28 @@
         <state relative-caret-position="-1275" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Sector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#145#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synchroCSV.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Synchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="285" column="73" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
+        <state relative-caret-position="2380">
+          <caret line="140" column="20" lean-forward="true" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1209#1215#0" expanded="true" />
+            <element signature="e#1391#1399#0" expanded="true" />
+            <element signature="e#10743#10752#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -391,7 +410,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -399,7 +417,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>junit:junit:4.12</last-edited>
+          <last-edited>com.opencsv:opencsv:4.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

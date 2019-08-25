@@ -2,7 +2,6 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -276,7 +275,6 @@ public class Synchronizer {
 
     JUnitCore junit = new JUnitCore();
     junit.addListener(new TextListener(System.out));
-    Result result = junit.run(Synchronizer.class);
 
     System.out.println("--Programme de synchronisation des tâches--");
 
