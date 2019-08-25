@@ -10,6 +10,7 @@
 Use Intellij IDEA with:
 - [google-java-format](https://github.com/google/google-java-format) (Use Ctrl-Alt-L to auto-format)
 - maven
+
 Use the "Open" option on the welcome screen to open the project.
 
 ## Exporting "site-interne"-ready CSVs:
