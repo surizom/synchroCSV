@@ -5,10 +5,7 @@ import org.junit.runner.JUnitCore;
 
 import java.io.*;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Cette classe est le coeur du programme: elle contient toutes les fonctions importantes.
@@ -30,12 +27,12 @@ public class Synchronizer {
   private static final String CSV_SEPARATOR = ";";
   /** Charset */
   private static final Charset CSV_CHARSET = Charset.availableCharsets().get("ISO-8859-2");
-  /** Liste des tâches du système */
-  private static ArrayList<Task> tasks = new ArrayList<Task>();
+  /** Ensemble des tâches du système */
+  private static Set<Task> tasks = new HashSet<>();
   /**
-   * Liste des secteurs, mise à jour grâce au constructeurs de secteur via la méthode Main.addSector
+   * Ensemble des secteurs, mise à jour grâce au constructeurs de secteur via la méthode Main.addSector
    */
-  private static List<Sector> listOfSectors = new ArrayList<Sector>();
+  private static Set<Sector> sectors = new HashSet<>();
 
   /**
    * convertit un tableau de String en int
@@ -62,10 +59,7 @@ public class Synchronizer {
    * @return
    */
   private static File[] listFiles(String directoryPath) {
-    File[] files = null;
-    File directoryToScan = new File(directoryPath);
-    files = directoryToScan.listFiles();
-    return files;
+    return new File(directoryPath).listFiles();
   }
 
   /**
@@ -112,11 +106,12 @@ public class Synchronizer {
    *
    * <p>Elle n'est donc censé être utilisée que si l'on pense que la tâche existe vraiment.
    */
-  private static Task fetchTask(String taskName) {
-    for (Task task : tasks) {
-      if (Task.equalstr(task.getName(), taskName)) {
-        return task;
-      }
+  private static Task fetchTask(final String taskName) {
+    // On cherche la premiere tache dont le nom correspond à la tache qu'on cherche
+    Optional<Task> taskToFind =
+        tasks.stream().filter(task -> task.getName().equals(taskName)).findFirst();
+    if (taskToFind.isPresent()) {
+      return taskToFind.get();
     }
     throw new RuntimeException(
         "Tâche \"" + taskName + "\" inexistante dans la liste des tâches importée");
@@ -158,7 +153,10 @@ public class Synchronizer {
                 throw new RuntimeException(
                     "Erreur de date à la tâche: \""
                         + values[0]
-                        + "\""); // ce bloc try catch n'était pas obligatoire mais permet en cas de
+                        + "\" du secteur "
+                        + sector.getName()
+                        + "Veuillez la corriger et relancer le programme");
+                // RuntimeException permet en cas de
                 // chibrage de remonter à la ligne qui chibre
               }
               Task task =
@@ -168,7 +166,7 @@ public class Synchronizer {
               addTask(task, sector);
               if (values.length
                   > 3) { // ça sert pas à grand chose, mais en gros ça permet de garder les
-                // ressources dans le fichier qu'on va emporter plus tard
+                // ressources dans le fichier qu'on va exporter plus tard
                 task.setResources(values[3]);
               }
             }
@@ -187,7 +185,7 @@ public class Synchronizer {
    */
   private static void importTasks(String path) {
     for (File file : listFiles(path)) {
-      if (file.getName().contains(".csv")) {
+      if (file.getName().endsWith(".csv")) {
         try {
           importTasksFromFile(file);
         } catch (IOException e) {
@@ -206,22 +204,20 @@ public class Synchronizer {
    */
   private static void syncTasks() {
 
-    for (Sector sector : listOfSectors) {
+    for (Sector sector : sectors) {
       for (Task task : sector.getListOfTasks()) {
-        try {
-          Task taskSync = fetchTask(task.getName());
-          task.setFinish(taskSync.getFinish());
-          task.setStart(taskSync.getStart());
-        } catch (Exception e) {
-          e.printStackTrace();
-        }
+        // TaskSync = tâche présente dans la list de tâches, on prend ses valeurs de début et fin et
+        // on l'applique partout
+        Task taskSync = fetchTask(task.getName());
+        task.setFinish(taskSync.getFinish());
+        task.setStart(taskSync.getStart());
       }
     }
   }
 
   /** Export des CSV secteur dans le répertoire export du projet java */
   private static void exportSectors() {
-    for (Sector sector : listOfSectors) {
+    for (Sector sector : sectors) {
       System.out.println("Début d'exportation du MacroPlanning " + sector);
       String destinationfile = "export\\" + sector.getName() + ".csv";
       try {
@@ -309,6 +305,6 @@ public class Synchronizer {
   }
 
   public static void addSector(Sector sector) {
-    listOfSectors.add(sector);
+    sectors.add(sector);
   }
 }
