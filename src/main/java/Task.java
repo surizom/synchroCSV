@@ -49,10 +49,10 @@ public class Task {
   /** */
   public static boolean equalstr(String a, String b) {
 
-  	//Removing spaces and transforming sting to lowercase
+    // Removing spaces and transforming sting to lowercase
     String[] aTable = a.toLowerCase().split(" ");
     String[] bTable = b.toLowerCase().split(" ");
-    String lowerA ="";
+    String lowerA = "";
     String lowerB = "";
 
     for (int i = 0; i < bTable.length; i++) {

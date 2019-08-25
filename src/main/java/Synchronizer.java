@@ -2,7 +2,8 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
-
+import org.junit.runner.Result;
+import org.junit.runner.RunWith;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -10,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
 
 /**
  * Cette classe est le coeur du programme: elle contient toutes les fonctions importantes.
@@ -124,12 +124,8 @@ public class Synchronizer {
         "Tâche \"" + taskName + "\" inexistante dans la liste des tâches importée");
   }
 
-  private static String getSectorNameFromFile(File file){
-    return file.getName()
-            .substring(
-                    0,
-                    file.getName().length()
-                            - 4);
+  private static String getSectorNameFromFile(File file) {
+    return file.getName().substring(0, file.getName().length() - 4);
   }
 
   /**
@@ -141,7 +137,7 @@ public class Synchronizer {
   private static void importTasksFromFile(File file) throws IOException {
     try {
       FileInputStream fis = new FileInputStream(file);
-      InputStreamReader isr = new InputStreamReader(fis,CSV_CHARSET);
+      InputStreamReader isr = new InputStreamReader(fis, CSV_CHARSET);
       CSVReader reader = new CSVReader(isr);
       String[] nextLine;
       Sector sector = new Sector(getSectorNameFromFile(file)); // crée un secteur par fichier
@@ -155,8 +151,8 @@ public class Synchronizer {
                * Là en gros on importe pour de vrai ce qu'il y a dans les CSV secteurs.
                * Values c'est le tableau correspondant à la ligne
                */
-              int[] start ;
-              int[] finish ;
+              int[] start;
+              int[] finish;
               try {
                 start = convertToInt(values[1].split(DATE_SEPARATOR)); // ={dd,mm,yy}
                 finish = convertToInt(values[2].split(DATE_SEPARATOR)); // ={dd,mm,yy}
@@ -187,16 +183,18 @@ public class Synchronizer {
   }
 
   /**
-   * Parcourt un dossier et applique la méthode addTasks à tous ses fichiers
+   * Parcourt un dossier et applique la méthode addTasks à tous ses fichiers .csv
    *
    * @param path
    */
   private static void importTasks(String path) {
     for (File file : listFiles(path)) {
-      try {
-        importTasksFromFile(file);
-      } catch (IOException e) {
-        e.printStackTrace();
+      if (file.getName().contains(".csv")) {
+        try {
+          importTasksFromFile(file);
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
       }
     }
   }
@@ -223,14 +221,14 @@ public class Synchronizer {
     }
   }
 
-  /** Export des CSV secteur dans le répertoire du projet java */
+  /** Export des CSV secteur dans le répertoire export du projet java */
   private static void exportSectors() {
     for (Sector sector : listOfSectors) {
       System.out.println("Début d'exportation du MacroPlanning " + sector);
-      String destinationfile = sector.getName() + ".csv";
+      String destinationfile = "export\\" + sector.getName() + ".csv";
       try {
         OutputStream fisw = new FileOutputStream(destinationfile);
-        OutputStreamWriter isw = new OutputStreamWriter(fisw,CSV_CHARSET);
+        OutputStreamWriter isw = new OutputStreamWriter(fisw, CSV_CHARSET);
         CSVWriter writer = new CSVWriter(isw, ';', '\"', '\\', "\n");
         writer.writeNext(FILE_HEADER);
         writer.writeNext(sector.getHeader());
@@ -253,8 +251,8 @@ public class Synchronizer {
   public static void exportTasks() {
     String destinationfile = "Récapitulatif des tâches.csv";
     try {
-      OutputStream fisw = new FileOutputStream(destinationfile);
-      OutputStreamWriter isw = new OutputStreamWriter(fisw,CSV_CHARSET);
+      OutputStream fisw = new FileOutputStream("export\\" + destinationfile);
+      OutputStreamWriter isw = new OutputStreamWriter(fisw, CSV_CHARSET);
       CSVWriter writer = new CSVWriter(isw, ';', '\"', '\\', "\n");
       String[] headerT = {"nom", "debut", "fin", "niveau", "ressources", "secteurs"};
       writer.writeNext(headerT);
@@ -275,11 +273,12 @@ public class Synchronizer {
     }
   }
 
+
   public static void main(String[] args) {
 
     JUnitCore junit = new JUnitCore();
     junit.addListener(new TextListener(System.out));
-    // Result result = junit.run(SynchroMacroPlanning.class);
+    Result result = junit.run(Synchronizer.class);
 
     System.out.println("--Programme de synchronisation des tâches--");
 
@@ -293,7 +292,7 @@ public class Synchronizer {
 
     importTasks(directory);
     int rep;
-    List<Integer> reps = new ArrayList<Integer>(Arrays.asList(1,2));
+    List<Integer> reps = new ArrayList<Integer>(Arrays.asList(1, 2));
     do {
       System.out.println("Importation terminée. Exporter les CSV synchronisés?");
       System.out.println("1 - Oui");

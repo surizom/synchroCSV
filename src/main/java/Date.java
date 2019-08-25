@@ -1,6 +1,6 @@
 public class Date implements Comparable<Date> {
 
-  private final static String SEPARATOR = "/";
+  private static final String SEPARATOR = "/";
 
   private int day;
   private int month;
