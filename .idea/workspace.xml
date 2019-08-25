@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed66235b-1326-4509-a6fc-fc9ce611e3e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/synchroCSV_jar/synchroCSV.jar" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/synchroCSV_jar/synchroCSV.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Synchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Synchronizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synchroCSV.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="ed66235b-1326-4509-a6fc-fc9ce611e3e0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +23,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Synchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="289" lean-forward="true" selection-start-line="289" selection-end-line="289" />
+            <state relative-caret-position="2703">
+              <caret line="285" column="73" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1209#1215#0" expanded="true" />
-                <element signature="e#1391#1399#0" expanded="true" />
-                <element signature="e#10794#10803#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,12 +214,12 @@
       <option name="presentableId" value="Default" />
       <updated>1566686800224</updated>
       <workItem from="1566686805140" duration="7015000" />
-      <workItem from="1566736392682" duration="187000" />
+      <workItem from="1566736392682" duration="938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7202000" />
+    <option name="totallyTimeSpent" value="7953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="-7" width="1472" height="878" extended-state="6" />
@@ -240,13 +232,13 @@
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3297587" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -331,13 +323,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Synchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="289" lean-forward="true" selection-start-line="289" selection-end-line="289" />
+        <state relative-caret-position="2703">
+          <caret line="285" column="73" selection-start-line="285" selection-start-column="73" selection-end-line="285" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1209#1215#0" expanded="true" />
-            <element signature="e#1391#1399#0" expanded="true" />
-            <element signature="e#10794#10803#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -355,7 +345,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
