@@ -3,7 +3,6 @@ import com.opencsv.CSVWriter;
 import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
-import org.junit.runner.RunWith;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -272,7 +271,6 @@ public class Synchronizer {
       throw new RuntimeException("fichier d'export non trouvé pour la synthèse des tâches");
     }
   }
-
 
   public static void main(String[] args) {
 
